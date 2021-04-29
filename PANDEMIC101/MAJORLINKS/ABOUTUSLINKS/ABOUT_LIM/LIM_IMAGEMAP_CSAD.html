@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<base target="newSpace">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Places I want to Visit</title>
+	<script language="Javascript">
+		function writeText(txt){
+		document.getElementById("desc").innerHTML=txt;
+		}
+		function dissolveText(txt){
+		document.getElementById("desc").innerHTML=txt;
+		}
+	</script>
+    <style>
+    body{
+		background-image:url(sub-bg.jpg); 
+		background-size: 100%;
+		padding:5px;
+		}
+	a{
+		font-family: Rubik;
+		font-size:15px;
+		padding-left:90px;
+	}
+	.format:link, .format:visited {
+		color: white;
+		padding: 15px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	}
+	.format:hover,.format:active {
+		background-color: #856A64;
+	}
+	.button:link, .button:visited {
+		color: white;
+		padding: 15px 25px;
+		text-align: center;
+		text-decoration: none;
+		background-color: black;
+		border-style: outset;
+		border-color: white;
+		display: inline-block;
+	}
+	.button:hover,.button:active {
+		background-color: #856A64;
+	}
+	.menu{
+		background-color: black;
+		padding: 10px;
+	}
+	.twitter, .facebook, .instagram{
+		float:right;
+		height: 40px;
+		width: 40px;
+	}
+	.sites{
+		padding-right: 20px;
+		float:right;
+	}
+	.logo{
+		height: 9%;
+		width: 9%;
+		float: center;
+		padding-left: 10px;
+	}
+	h1{
+		font-family: Cookie;
+		font-size: 50px;
+		color: #856A64;
+		border-style: solid;
+		border-color: black;
+		background-color: black;
+		text-align:center;
+	}
+	h3{
+		font-family: Rubik;
+		font-size: 15px;
+		color: black;
+		text-align: center;
+	}
+	.map{
+		padding:10px;
+		margin-right:20px;
+		margin-bottom:20px;
+		border:2px;
+		border: 5px solid;
+		border-color: #856A64;
+		background-color: black;
+	}
+	h2{
+		font-family: Rubik;
+		font-size: 30px;
+		color: black;
+		text-align: center;
+		position: relative;
+		margin:20px;
+		border: 5px dotted;
+		width: 25%;
+		height: 25%;
+	}
+    </style>
+</head>
+<body class="top">
+    <link rel="stylesheet" type="text/css">
+    <!--LIM-NOELLE-->
+    <!--DATE-->
+	<div class="menu">
+		<br>
+		<center>
+			<img class="logo" src="logo-black.jpg" >
+		</center>
+		<hr></hr>
+		<a class="format" href="LIM_LANDINGPAGE_CSAD.html" title="Go Back To HomePage">BACK TO HOMEPAGE<br></a>
+		<div class="sites">
+			<a href="https://www.facebook.com/noellelimm" target="_blank"><img class="facebook" title="Facebook" alt="Facebook" src="facebook.png"></a>
+			<a href="https://www.instagram.com/noelleliiiim/" target="_blank"><img class="instagram" title="Instagram" alt="Instagram" src="instagram.jpg"></a>
+			<a href="https://twitter.com/noelleliiiim" target="_blank"><img class="twitter" alt="Twitter" title="Twitter" src="twitter.png"></a>
+		</div>
+	</div>
+	
+	<img src="place-banner.jpg" height="20%" width="100%" >
+	
+	<div>
+		<br><br>
+		<center>
+		<img src="MAP.jpg" usemap="#places">
+		<map name="places">
+			<area shape="circle" coords="347,285,85" href="LIM_GREECE_CSAD.html" onMouseOver="writeText('GREECE');" onMouseOut="dissolveText('GREECE')";/> 
+			<area shape="rectangle" coords="469,11,692,250" href="LIM_PHILIPPINES_CSAD.html" onMouseOver="writeText('PHILIPPINES');" onMouseOut="dissolveText('PHILIPPINES')";/> 
+			<area shape="rectangle" coords="13,16,233,248" href="LIM_RUSSIA_CSAD.html" onMouseOver="writeText('RUSSIA');" onMouseOut="dissolveText('RUSSIA')";/> 
+			<area shape="poly" coords="245,13,353,13,460,13,461,130,461,246,423,245,408,227,382,209,348,204,315,207,296,224,273,249,244,246,245,129" 
+			href="LIM_JAPAN_CSAD.html" onMouseOver="writeText('JAPAN');" onMouseOut="dissolveText('JAPAN')";/>
+			<area shape="poly" coords="15,328,175,329,272,328,298,352,332,371,334,406,335,485,177,485,15,485,15,406" href="LIM_MALDIVES_CSAD.html" 
+			onMouseOver="writeText('MALDIVES');" onMouseOut="dissolveText('MALDIVES')";/>
+			<area shape="poly" coords="424,327,532,327,690,327,690,406,690,480,530,480,373,481,373,405,373,369,392,362" href="LIM_CHINA_CSAD.html"
+			onMouseOver="writeText('CHINA');" onMouseOut="dissolveText('CHINA')";/>
+		</map>
+		<h2 id="desc"></h2>
+		</center>
+	</div>
+	
+</body>
+</html>
