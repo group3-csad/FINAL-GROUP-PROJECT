@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Exploration</title>
+	<script language="JavaScript">
+		function writeText(txt){
+			document.getElementById("desc").innerHTML=txt;
+		}
+		function dissolveText(txt){
+			document.getElementById("desc").innerHTML=txt;
+		}
+	</script>
+    <style type="text/css">
+		body{
+			margin:10px;
+			background-image: url("IMAGES/bg.jpg");
+		}
+		h1{
+			font-size:60px;
+			font-family:Matura MT Script Capitals;
+			text-align:center;
+		}
+		div img{
+			width:800px;
+			height:640px;
+		}
+		#desc{
+			font-size:20px;
+		}
+		.nav-area{
+			float:right;
+			list style: none;
+			margin-top:30px;
+		}
+		.nav-area li{
+			display:inline-block;
+		}
+		.nav-area li a{
+			color: black;
+			text-decoration:none;
+			padding: 5px 20px;
+			font-family:poppins;
+			font-size:16px;
+		}
+		.nav-area li a:hover{
+			background:#fff;
+			color: #333;
+		}
+    </style>
+</head>
+<body>
+    <!--ENRIQUEZ, Marc Anselm P.-->
+    <!--3.30.21-->
+	<br><br>
+		<div class="wrapper">
+			<ul class="nav-area">
+				<li><a href="../ENRIQUEZ_LandingPage_CSAD.html" title ="Home" target="newWin">Homepage</a></li>
+				<li><a href="../ENRIQUEZ_ABOUTME_CSAD.html" title ="About Me" target="newWin">About Me</a></li>
+				<li><a href="../ENRIQUEZ_QUOTES_CSAD.html" title="Favorite Quotes" target="newWin">My Favorite Quotes</a></li>
+				<li><a href="../ENRIQUEZ_RESUME_CSAD.html" title="My Resume" target="newWin">My Resume</a></li>
+				<li><a href="../ENRIQUEZ_insertMedia_CSAD.html" title="Song/Artist" target="newWin">My Favorite Song/Artist</a></li>
+				<li><a href="../ENRIQUEZ_insertMovie_CSAD.html" title="Favorite Movie" target="newWin">My Favorite Movie</a></li>
+				<li><a href="../ENRIQUEZ_PhotoGallery_CSAD.html" title="Photo Gallery" target="newWin">Photo Gallery</a></li>
+			</ul>
+		</div>
+	
+	<h1>Exploration</h1>
+    <br>
+	<div align="center">
+		<p id="desc"></p>
+		<img src="Images/Main.jpg" usemap="#explore">
+		<map name="explore">
+			<area shape="rect" coords="290,14,521,334" href="France.html" target="newspace" 
+			onMouseOver="writeText('Paris, France is the capital and most populous city of France');" onMouseOut="dissolveText('');"/>
+			
+			<area shape="poly" coords="43,62,288,62,289,335,452,
+			336,453,372,437,364,412,356,378,355,345,363,317,380,
+			294,400,284,416,276,440,248,441,227,418,199,400,174,
+			392,132,390,100,399,79,410,65,419,46,441,35,441,37,435,
+			38,418,39,410,,41,399,42,379,45,364,42,279,39,266,45,251,
+			46,241,54,221,47,206,43,80" href="Italy.html" target="newspace"
+			onMouseOver="writeText('Rome, Italy is located in the central portion of the Italian peninsula');" onMouseOut="dissolveText('');"/>
+			
+			<area shape="circle" coords="145,514,119.5" href="Antarctica.html" target="newspace"
+			onMouseOver="writeText('Antarctica is the coldest, windiest and driest continent');" onMouseOut="dissolveText('');"/>
+			
+			<area shape="circle" coords="386,475,114" href="Greece.html" target="newspace"
+			onMouseOver="writeText('Santorini, Greece is the ultimate gastronomic experience, as the island is a true culinary paradise');" onMouseOut="dissolveText('');"/>
+			
+			<area shape="poly" coords="524,291,696,292,693,301,691,600,451,
+			597,452,565,468,546,483,519,495,488,499,462,490,418,475,394,454,
+			373,455,336,522,335" href="Japan.html" target="newspace"
+			onMouseOver="writeText('Kyoto is Japan in a nutshell');" onMouseOut="dissolveText('');"/>
+		</map>
+		
+	</div>
+	
+</body>
+</html>
+
+
+
