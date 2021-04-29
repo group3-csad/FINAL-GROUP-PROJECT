@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HOMEPAGE</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    	background: url(IMAGES/BG/homepage.jpg) no-repeat;
+    	background-size: cover;
+    	background-position: center;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+    	color: #752a7d;
+    	font-size: 40px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 1px;
+    }
+    
+    header .nav a{
+    	color: #314760;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;	
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #f5e3fc;
+    }
+    
+    .content{
+    	margin: auto 150px;
+    }
+    
+    .content .info h2{
+    	color: #fec8d8;
+    	font-size: 60px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+    }
+    
+    .content .info h2 span{
+    	color: #f07bbb;
+    	font-size: 55px;
+    	text-transform: uppercase;
+    	font-weight: 600;
+    }
+    
+    .content .info p{
+    	color: #fff;
+    	font-size: 18px;
+    	margin: 20px 20px;
+    	text-align: justify;
+    }
+    
+    .me{
+    	margin: 20px 20px;
+    	float: left;
+    	clear: left;
+    }
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+    <!--AYAYO, MOIRA RENEE-->
+    <!--03.24.2021-->
+	<section>
+		<header>
+			<h2 class="logo">HOME</h2>
+			<div class="nav">
+				<a href="AYAYO_ABOUTME.html">About Me</a>
+				<a href="AYAYO_RESUME.html">Resume</a>
+				<a href="AYAYO_TRAVEL.html">Travel</a>
+				<a href="AYAYO_PHOTOGALLERY.html">Photo Gallery</a>
+				<a href="AYAYO_MYBEAT.html">My Beats</a>
+				<a href="AYAYO_MYKINDOFFILM.html">My Kind of Film</a>
+			</div>
+		</header>
+		<div class="content">
+		<div class="info">
+			<img src="IMAGES/me.png" width="250px" class="me">
+			<h2>Here's who I am <br><span>and what I do</span></h2>
+			<hr>
+			<p>I'm a Computer Science student from University of the East
+			and I'm planning to be a Web Developer or Designer someday. From
+			the years that had pass I was confused and scared in what job I apply
+			to in the future after I graduated. I took the course BSCS as what my parents
+			want me to take, I was clueless back then on what course I should take that's
+			why I followed my parents desired course for me. Even though the road was rough
+			I'm still trying my best to comply and learn. </p>
+		</div>
+		</div>
+	</section>
+</body>
+</html>

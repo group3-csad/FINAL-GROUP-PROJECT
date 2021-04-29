@@ -1,0 +1,418 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MY BEAT</title>
+    <style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif;
+	}
+
+	section{
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background: #c3d2d8;
+	}
+
+	header{
+		position: relative;
+		top: 0;
+		width: 100%;
+		padding: 30px 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo{
+		position: relative;
+		color: #205565;
+		font-size: 40px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 1px;
+	}
+
+	header .nav a{
+		color: #205565;
+		text-decoration: none;
+		font-weight: 500;
+		letter-spacing: 1px;
+		padding: 2px 15px;
+		border-radius: 20px;
+		transition: 0.3s;
+		transition-property: background;	
+	}
+
+	header .nav a:not(:last-child){
+		margin-right: 30px;
+	}
+
+	header .nav a:hover{
+		background: #699cb3;
+	}
+
+	.btn{
+		width: 200px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #A2D9CE;
+		margin: 30px 120px;
+	}
+
+	.btn:hover{
+		background-color: #A2D9CE;
+	}
+
+	.btn a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: black;
+		cursor: pointer;
+	}
+
+	h1{
+		color: #a15d98;
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.container .name{
+		color: #838bb2;
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.container .des{
+		color: #838bb2;
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+
+	.container .music-container{
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+	}
+
+	.container .music-container .box{
+		height: 16rem;
+		width: 80%;
+		display: flex;
+		align-items: center;
+		background: #f9f9f9;
+		border-radius: 1rem;
+		box-shadow: 0 .5rem 1rem #000;
+		overflow: hidden;
+		margin: 2rem;
+	}
+
+	.container .music-container .box .image{
+		height: 100%;
+		width: 25%;
+	}
+
+	.container .music-container .box .image img{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.container .music-container .box .music{
+		width: 75%;
+	}
+
+	.container .music-container .box .music audio{
+		width: 100%;
+		outline: none;
+	}
+
+	.container .music-container .box .music audio{
+		background: none;
+	}
+
+	.category{
+		font-size: 40px;
+		font-family: Arial;
+		text-align: justify;
+		margin: 30px 10px;
+		font-weight: bold;
+		color: #f6d55c;
+		text-shadow: 0 .5rem 1rem #173f5f;
+	}
+
+	.title{
+		font-size: 18px;
+		font-family: Tahoma;
+		text-align: justify;
+		margin: 10px 10px;
+		font-weight: bold;
+	}
+
+	.artist{
+		font-size: 14px;
+		font-family: Tahoma;
+		text-align: justify;
+		margin: 0 10px;
+		font-weight: bold;
+	}
+
+	.about{
+		font-size: 14px;
+		font-family: Arial;
+		text-align: justify;
+		margin: 10px 10px;
+		line-height: 20px;
+	}
+	</style>
+</head>
+<body id="top">
+<link rel="stylesheet" type="text/css">
+    <!--AYAYO, MOIRA RENEE-->
+    <!--03.24.2021-->
+	<section>
+		<header>
+			<h4 class="logo">MY BEAT</h4>
+			<div class="nav">
+				<a href="AYAYO_HOMEPAGE.html">Home</a>
+				<a href="AYAYO_ABOUTME.html">About Me</a>
+				<a href="AYAYO_RESUME.html">Resume</a>
+				<a href="AYAYO_TRAVEL.html">Travel</a>
+				<a href="AYAYO_GALLERY.html">Photo Gallery</a>
+				<a href="AYAYO_MYKINDOFFILM.html">My Kind of Film</a>
+			</div>
+		</header>
+	
+	<div class="container">
+		<h2 class="name">MY BEAT</h2>
+		<p class="des"> Music is life itself. </p>
+	
+	<br>
+	<hr>
+	
+	<button class="btn"><a href="#kpop">KPOP</a></button>
+	<button class="btn"><a href="#opm">OPM</a></button>
+	<button class="btn"><a href="#edm">EDM</a></button>
+	
+	<br>
+	<hr>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h1 id="kpop"><u>KPOP</u></h1>
+	<h2 style="font-size: 17px; margin: 0 40px;">What is KPOP?</h2>
+	<p style="text-align: justify; font-size: 17px; margin: 5px 40px;">
+	K-pop is a genre of popular music originating in South Korea. It is influenced by styles and genres from around the world, 
+	such as experimental, rock, jazz, gospel, hip hop, R&B, reggae, electronic dance, folk, country, and classical on top of its 
+	traditional Korean music roots.</p></h4>
+	<div class="music-container">
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/psychocover.png" alt=" psycho album cover">
+				</div>
+				<div class="music">
+					<p class="title"> Psycho </p>
+					<p class="artist"> Red Velvet </p>
+					<p class="about"> "Psycho" is a song that was recorded by South Korean girl group 
+					Red Velvet and was released as the lead single from their first compilation album 
+					The ReVe Festival: Finale (2019). A gothic-themed music video accompanied the 
+					single's digital release on December 23, 2019.Psycho is an R&B and future bass 
+					track that includes Red Velvet singing about a relationship "full of ups and downs"</p>
+					<audio src="SOUND/KPOP/RED VELVET - PSYCHO.mp3" controls></audio>
+				</div>
+			</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/icsmcover.png" alt="icsm album cover">
+				</div>
+				<div class="music">
+					<p class="title"> I CAN'T STOP ME </p>
+					<p class="artist"> TWICE </p>
+					<p class="about"> I Can't Stop Me is a song recorded by South Korean girl group Twice, 
+					for their second Korean-language studio album, Eyes Wide Open (2020). It was released 
+					on October 26, 2020, through JYP Entertainment and Republic Records. "I Can't Stop Me" 
+					is a synthwave and disco-infused pop song with '80s-influences and rich instrumental 
+					sound exuding a retro style. The track's lyrics describe the boundaries of the good
+					and bad of intractable desires.</p>
+					<audio src="SOUND/KPOP/TWICE - I CAN'T STOP ME.mp3" controls></audio>
+				</div>
+			</div>
+		
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/notshycover.jpg" alt="not shy album cover">
+				</div>
+				<div class="music">
+					<p class="title"> Not Shy </p>
+					<p class="artist"> ITZY </p>
+					<p class="about"> Not Shy is the third extended play by South Korean girl 
+					group Itzy. It was released on August 17, 2020 by JYP Entertainment. 
+					It is available in three versions and contains six tracks, with "Not Shy" 
+					released as the lead single. The album received positive reviews 
+					from critics, who commended Itzy's departure from themes of 
+					independence and self-love to the theme of love. </p>
+					<audio src="SOUND/KPOP/ITZY - NOT SHY.mp3" controls></audio>
+				</div>
+			</div>
+		</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	
+	<br>
+	<br>
+	<hr size="20px" color="#619196">
+	<br>
+	<br>
+	<br>
+	<br>
+			
+	<h1 id="opm"><u>OPM</u></h1>
+	<h2 style="font-size: 16px; margin-left: 40px; margin-right: 40px;">What is OPM?</h2>
+	<p style="text-align: justify; font-size: 16px; margin-left: 40px; margin-right: 40px; margin-bottom: 10px;">
+	Pinoy pop or P-pop (short for Pinoy popular music, Filipino pop, Philippine pop, Pilipino pop) 
+	refers to a popular contemporary music in the Philippines originating from the OPM genre. 
+	With its beginnings in the 1970s, Pinoy pop is a growing genre in year of 2020s. 
+	Through the 1990s to the 2000s, OPM pop was regularly showcased in the live band scene.</p>
+	<div class="music-container">
+		<div class="box">
+			<div class="image">		
+				<img src="IMAGES/paubayacover.jpg" alt="paubaya album cover">
+			</div>
+			<div class="music">
+				<p class="title"> Paubaya </p>
+				<p class="artist"> Moira Dela Torre </p>
+				<p class="about">Moira Dela Torre sings about unreciprocated love in her newest track 
+				“Paubaya,” which she wrote with her husband, Jason Hernandez. She released the song on 
+				her YouTube page, Oct. 23, alongside its accompanying lyric video. The last track of the 
+				Patawad album, the closing song for the winter season. “At kung masaya ka sa piling niya /
+				Hindi ko na pipilit pa / Ang tanging hiling ko lang sa kanya / ‘Wag kang paluhain at alagaan
+				ka niya,” the chorus goes.</p>
+				<audio src="SOUND/OPM/MOIRA DELA TORRE - PAUBAYA.mp3" controls></audio>
+			</div>
+		</div>
+			
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/talacover.jpg" alt="tala album cover">
+			</div>
+			<div class="music">
+				<p class="title"> Tala </p>
+				<p class="artist"> Sarah Geronimo </p>
+				<p class="about"> Tala is a song by Filipino singer and actress Sarah Geronimo co-written with
+				Nica del Rosario and Emmanuel Sambayan with music and production by Jumbo De Belen and Alisson
+				Shore of Flip Music Production. It was released as the lead single from Geronimo's platinum 
+				album The Great Unknown. </p>
+				<audio src="SOUND/OPM/SARAH G - TALA.mp3" controls></audio>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/jbcover.jpg" alt="let me be the one album cover">
+			</div>
+			<div class="music">
+				<p class="title"> Let Me Be The One </p>
+				<p class="artist"> Jimmy Bondoc </p>
+				<p class="about">Jimmy Bondoc (born James Patrick Romero Bondoc; May 31, 1975) 
+				is a Filipino musician and songwriter best known for composing his songs Let Me Be The One, 
+				Hanggang Dito Nalang.</p>
+				<audio src="SOUND/OPM/JIMMYB - LET ME BE THE ONE.mp3" controls></audio>
+			</div>
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	
+	<br>
+	<br>
+	<hr size="20px" color="#619196">
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h1 id="edm"><u>EDM</u></h1>
+	<h2 style="font-size: 16px; margin-left: 40px; margin-right: 40px;">What is ELECTRIC DANCE MUSIC?</h2>
+	<p style="text-align: justify; font-size: 16px; margin-bottom: 10px; margin-left: 40px; margin-right: 40px;">
+	Electronic dance music (EDM), also known as dance music, club music, or simply dance, is a broad range of percussive 
+	electronic music genres made largely for nightclubs, raves, and festivals. It is generally produced for playback by 
+	DJs who create seamless selections of tracks, called a mix, by segueing from one recording to another. EDM producers
+	also perform their music live in a concert or festival setting in what is sometimes called a live PA.</p>
+	
+	<div class="music-container">
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/rainonmecover.jpg" alt="rain on me album cover">
+				</div>
+				<div class="music">
+					<p class="title"> Rain On Me (with Ariana Grande) </p>
+					<p class="artist"> Lady Gaga, Ariana Grande </p>
+					<p class="about">"Rain on Me" is a song by American singers Lady Gaga and Ariana Grande, from Gaga's 
+					sixth studio album, Chromatica (2020). An upbeat house, dance-pop and disco song, the song features a
+					synth-disco beat and funk guitars. Described by Gaga as a "celebration of tears", the track explores 
+					resilience in defiance of the hardships in life.</p>
+					<audio src="SOUND/EDANCE/LADYGG - RAIN ON ME.mp3" controls></audio>
+				</div>
+			</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/dynamitecover.jpg" alt="dynamite album cover">
+				</div>
+				<div class="music">
+					<p class="title"> Dynamite </p>
+					<p class="artist"> BTS </p>
+					<p class="about"> Dynamite is a song recorded by South Korean boy band BTS, released on August 21, 2020, 
+					through Big Hit Entertainment and Sony Music Entertainment. The song is an upbeat disco-pop song, intended to soothe listeners during the COVID-19 pandemic, 
+					the song talks about joy and appreciation for the little things that make life valuable.</p>
+					<audio src="SOUND/EDANCE/BTS - DYNAMITE.mp3" controls></audio>
+				</div>
+			</div>
+		
+		<div class="box">
+			<div class="image">
+				<img src="IMAGES/insideoutcover.jpg" alt="inside out album cover">
+				</div>
+				<div class="music">
+					<p class="title"> Inside Out (feat. Griff) </p>
+					<p class="artist"> Zedd, Griff </p>
+					<p class="about"> Inside Out is a dance-pop, EDM, electropop, house and pop song about falling and staying 
+					in love, and holding onto worthy relationships.Griff  also notes that the song promotes "the idea of loving
+					someone from the inside first", instead of focusing on "how things look on the outside".</p>
+					<audio src="SOUND/EDANCE/ZEDD - INSIDE OUT.mp3" controls></audio>
+				</div>
+			</div>
+		</div>
+		<button class="btn"><a href="#top">Go Top</a></button>
+	</div>
+	</section>
+</body>
+</html>

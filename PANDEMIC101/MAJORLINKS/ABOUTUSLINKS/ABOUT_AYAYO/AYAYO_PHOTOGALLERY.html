@@ -1,0 +1,388 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PHOTO GALLERY</title>
+    <style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif;
+	}
+
+	section{
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background: #ce897b;
+	}
+
+	header{
+		position: relative;
+		top: 0;
+		width: 100%;
+		padding: 30px 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo{
+		position: relative;
+		color: #4c4c4b;
+		font-size: 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 1px;
+	}
+
+	header .nav a{
+		color: #4c4c4b;
+		text-decoration: none;
+		font-weight: 500;
+		letter-spacing: 1px;
+		padding: 2px 15px;
+		border-radius: 20px;
+		transition: 0.3s;
+		transition-property: background;
+	}
+
+	header .nav a:not(:last-child){
+		margin-right: 30px;
+	}
+
+	header .nav a:hover{
+		background: #eecfbb;
+	}
+
+	.content{
+		margin: auto 150px;
+	}
+
+	.content .info h2{
+		color: #95483f;
+		font-family: "Poppins";
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		line-height: 60px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.btn{
+		width: 180px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #A2D9CE;
+		margin: 30px 10px;
+	}
+
+	.btn:hover{
+		background-color: #A2D9CE;
+	}
+
+	.btn a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: black;
+		cursor: pointer;
+	}
+	
+	h2{
+		font-family: "Poppins", sans-serif;
+		font-size: 75px;
+		text-align: center;
+		margin: 20px auto;
+		color: #bf2f32;
+	}
+	
+	.container1{
+		max-width: 1200px;
+		margin: auto;
+		background: #e3e3cd;
+		overflow: auto;
+	}
+	
+	.gallery1{
+		margin: 20px;
+		border: 20px inset #df6747;
+		float: left;
+		width: 300px;
+	}
+	
+	.gallery1 img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.container2{
+		max-width: 1200px;
+		margin: auto;
+		background: #e0f2f2;
+		overflow: auto;
+	}
+	
+	.gallery2{
+		margin: 20px;
+		border: 20px outset #0c695d;
+		float: left;
+		width: 300px;
+	}
+	
+	.gallery2 img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.container3{
+		max-width: 1200px;
+		margin: auto;
+		background: #bfb0b3;
+		overflow: auto;
+	}
+	
+	.gallery3{
+		margin: 20px;
+		border: 20px double #e8a631;
+		float: left;
+		width: 300px;
+	}
+	
+	.gallery3 img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.container4{
+		max-width: 1200px;
+		margin: auto;
+		background: #faac77;
+		overflow: auto;
+	}
+	
+	.gallery4{
+		margin: 20px;
+		border: 20px ridge #606b6f;
+		float: left;
+		width: 300px;
+	}
+	
+	.gallery4 img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.container5{
+		max-width: 1200px;
+		margin: auto;
+		background: #aec0c9;
+		overflow: auto;
+	}
+	
+	.gallery5{
+		margin: 20px;
+		border: 10px dashed #ca3542;
+		float: left;
+		width: 300px;
+	}
+	
+	.gallery5 img{
+		width: 100%;
+		height: auto;
+	}
+	</style>
+</head>
+<body id="top">
+<link rel="stylesheet" type="text/css">
+    <!--AYAYO, MOIRA RENEE-->
+    <!--03.24.2021-->
+	<section>
+		<header>
+			<h2 class="logo">Photo Gallery</h2>
+			<div class="nav">
+				<a href="AYAYO_HOMEPAGE.html">Home</a>
+				<a href="AYAYO_ABOUTME.html">About Me</a>
+				<a href="AYAYO_RESUME.html">Resume</a>
+				<a href="AYAYO_TRAVEL.html">Travel</a>
+				<a href="AYAYO_MYBEAT.html">My Beats</a>
+				<a href="AYAYO_MYKINDOFFILM.html">My Kind of Film</a>
+			</div>
+		</header>	
+		<div class="content">
+		<div class="info">
+			<h2> PHOTO GALLERY </h2>
+		</div>
+	
+	<p style="text-transform: uppercase; text-align: center; color:#f6d55c; font-size: 18px; margin-right: 40px; margin-bottom: 10px; margin-left: 40px;">
+	Make everyday a little less ordinary.</p>
+	<br>
+	<hr>
+	<button class="btn"><a href="#family">FAMILY PICTURES</a></button>
+	<button class="btn"><a href="#friends">FRIENDS</a></button>
+	<button class="btn"><a href="#selfies">SELFIES</a></button>
+	<button class="btn"><a href="#posters">POSTERS OF ALBUM</a></button>
+	<button class="btn"><a href="#film">MY KIND OF FILM</a></button>
+	<br>
+	<hr>
+	
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>		
+	<br><br><br><br><br>
+	
+	<div class="container1">
+		<h2 id="family"> FAMILY PICTURES </h2>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (5).png">
+		</div>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (2).png">
+		</div>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (6).png">
+		</div>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (4).png">
+		</div>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (3).png">
+		</div>
+		<div class="gallery1">
+			<img src="IMAGES/PHOTOGALLERY/FAMILY/family (1).png">
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+		
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>		
+	<br><br><br><br><br>
+		
+	<div class="container2">
+		<h2 id="FRIENDS"> FRIENDS </h2>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (1).png" >
+		</div>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (2).png" >
+		</div>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (3).png" >
+		</div>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (5).png" >
+		</div>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (6).png" >
+		</div>
+		<div class="gallery2">
+			<img src="IMAGES/PHOTOGALLERY/FRIENDS/friends (7).png">
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>		
+	<br><br><br><br><br>
+
+	<div class="container3">
+		<h2 id="selfies"> SELFIES </h2>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (2).png">
+		</div>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (3).png">
+		</div>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (4).png">
+		</div>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (5).png">
+		</div>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (6).png">
+		</div>
+		<div class="gallery3">
+			<img src="IMAGES/PHOTOGALLERY/SELFIES/selfie (7).png">
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>		
+	<br><br><br><br><br>
+	
+	<div class="container4">
+		<h2 id="posters"> POSTERS OF ALBUM </h2>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/ailee.png">
+		</div>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/chungha.jpg">
+		</div>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/sejeong.png">
+		</div>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/somi.jpg">
+		</div>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/taeyeon.jpg">
+		</div>
+		<div class="gallery4">
+			<img src="IMAGES/PHOTOGALLERY/POSTERS/tiff.jpg">
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>		
+	<br><br><br><br><br>
+	
+	<div class="container5">
+		<h2 id="film"> MY KIND OF FILM </h2>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (1).jpg">
+		</div>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (2).jpg">
+		</div>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (3).jpg">
+		</div>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (4).jpg">
+		</div>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (5).jpg">
+		</div>
+		<div class="gallery5">
+			<img src="IMAGES/PHOTOGALLERY/FILMS/film (6).jpg">
+		</div>
+	</div>
+	<button class="btn"><a href="#top">Go Top</a></button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

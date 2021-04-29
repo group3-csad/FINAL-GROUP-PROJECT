@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<base target="newSpace"/>
+    <meta charset="utf-8">
+    <title>TRAVEL</title>
+	<script language="JavaScript">
+		function writeText(txt){
+			document.getElementById("desc").innerHTML=txt;
+		}
+		function dissolveText(txt){
+			document.getElementById("desc").innerHTML=txt;
+		}
+	</script>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    	background-color: #f7e5bf;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+    	color: #57291f;
+    	font-size: 40px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 1px;
+    }
+    
+    header .nav a{
+    	color: #57291f;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #d77b5f;
+    }
+    
+    .content{
+    	margin: auto 150px;
+    }
+    
+    .content .info h2{
+    	color: #C0413B;
+    	font-size: 90px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+		text-align: center;
+    }
+    
+    .content .info h2 span{
+    	color: #f07bbb;
+    	font-size: 55px;
+    	text-transform: uppercase;
+    	font-weight: 600;
+    }
+    
+    .content .info p{
+    	color: #000;
+    	font-size: 18px;
+    	margin: 20px 20px;
+    	text-align: justify;
+    }
+	
+	p#desc{
+		font-family: Tahoma;
+		font-size: 18px;
+		color: black;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+    <!--AYAYO, MOIRA RENEE-->
+    <!--03.24.2021-->
+	<section>
+		<header>
+			<h2 class="logo">TRAVEL</h2>
+			<div class="nav">
+				<a href="AYAYO_HOMEPAGE.html">Home</a>
+				<a href="AYAYO_ABOUTME.html">About Me</a>
+				<a href="AYAYO_RESUME.html">Resume</a>
+				<a href="AYAYO_PHOTOGALLERY.html">Photo Gallery</a>
+				<a href="AYAYO_MYBEAT.html">My Beats</a>
+				<a href="AYAYO_MYKINDOFFILM.html">My Kind of Film</a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="info">
+				<h2>EAST ASIA</h2>
+				<hr>
+				<p>East Asia is the eastern region of Asia, which is defined in both geographical 
+				and ethno-cultural terms. The modern states of East Asia include China, Japan, Mongolia, 
+				North Korea, South Korea, and Taiwan. The East Asian states of China, North Korea, 
+				South Korea and Taiwan are all unrecognized by at least one other East Asian state due 
+				to severe ongoing political tensions in the region, specifically the division of Korea 
+				and the political status of Taiwan. Hong Kong and Macau, two small coastal 
+				quasi-dependent territories located in the south of China, are officially highly 
+				autonomous but are under de jure Chinese sovereignty. </p>
+				
+				<p>My top 5 places I wanted to visit first in the future are all in East Asia. Which are
+				South Korea, Japan, Hong Kong, Taiwan, and China. Feel free to click them below on the map
+				to view the top 3 places that you can visit in those countries.</p>
+			</div>
+		</div>
+		<div align="center">
+			<img src="IMAGES/TRAVEL/eastAsia.png" usemap="#eastAsia">
+			<map name="eastAsia">
+				<area shape="rect" coords="496,383,481,428" href="COUNTRY/Taiwan.html" onMouseOver="writeText('Taiwan is known for some of the best food in the world.');" onMouseOut="dissolveText('')"/>			
+				<area shape="rect" coords="416,435,502,464" href="COUNTRY/HongKong.html" onMouseOver="writeText('Hong Kong is renowned worldwide for its jungle of glass and stones and deep natural harbor.');" onMouseOut="dissolveText('')"/>
+				<area shape="circle" coords="490,244,18" href="COUNTRY/SKorea.html" onMouseOver="writeText('South Korea is the world leader in internet connectivity.');" onMouseOut="dissolveText('')"/>
+				<area shape="poly" coords="549,27,547,54,546,68,543,79,531,83,515,83,521,90,526,100,533,105,527,116,536,124,542,127,544,134,551,140,554,147,559,155,559,163,561,169,557,175,554,185,548,180,554,200,554,206,546,212,536,220,532,228,529,245,525,254,527,264,528,266,535,262,537,269,541,275,546,279,541,261,541,254,535,250,537,242,541,235,547,247,553,247,554,236,556,229,546,228,548,221,554,217,560,220,560,222,560,220,564,227,568,222,571,213,564,210,570,204,577,202,580,199,580,190,581,181,586,185,587,176,579,172,580,165,574,159,569,154,571,148,569,137,560,132,552,126,545,120,534,117,544,104,550,103,550,91,554,81,550,74" 
+				href="COUNTRY/Japan.html" onMouseOver="writeText('Japan is known worldwide for its traditional arts, including tea ceremonies, calligraphy and flower arranging.');" onMouseOut="dissolveText('')"/>
+				<area shape="poly" coords="145,217,139,219,128,226,129,238,122,244,118,239,106,236,103,252,103,262,90,260,86,265,91,280,86,294,71,299,54,301,51,307,42,304,32,308,30,313,32,320,39,322,37,336,45,340,47,348,55,358,64,355,76,355,84,357,78,370,68,376,74,383,68,386,62,388,66,395,71,400,80,408,87,411,95,410,102,414,110,416,117,420,121,429,133,437,142,434,149,440,159,432,161,439,171,428,181,432,196,432,202,424,215,416,226,415,234,416,235,423,252,423,258,428,257,434,262,441,260,452,253,462,264,464,268,473,274,476,273,485,277,481,281,486,287,483,293,488,296,474,316,469,331,461,345,464,353,474,365,473,378,468,384,478,389,466,403,458,411,450,420,440,437,438,446,431,448,419,457,415,454,406,463,405,466,389,469,372,475,347,471,336,464,343,454,342,463,333,469,323,449,325,465,315,452,314,441,300,429,302,428,286,435,270,446,259,437,263,427,262,419,277,412,270,398,269,399,259,406,254,407,246,415,238,418,226,426,227,428,240,427,250,443,226,449,204,457,194,462,183,470,168,460,151,462,135,467,123,452,99,446,119,441,125,419,115,408,123,371,98,360,102,346,111,347,120,354,123,351,134,357,148,348,154,337,160,339,181,349,182,358,173,372,176,363,184,356,191,350,205,342,218,334,218,329,227,336,233,326,250,307,257,287,273,264,271,250,265,220,276,208,261,189,255,178,257,172,254,170,241,162,229,150,224" 
+				href="COUNTRY/China.html" onMouseOver="writeText('China is the worlds third biggest country by territory, and has the largest population.');" onMouseOut="dissolveText('')"/>
+			</map>
+		</div>
+	<p id="desc"> </p> 
+	</div>
+	</section>
+</body>
+</html>
