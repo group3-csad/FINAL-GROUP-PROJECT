@@ -1,0 +1,395 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FASHION : QStyle</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+		background-color: #E7E7E7;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+		font-size: 50px;
+		color: #1c335f;
+    }
+    
+    header .nav a{
+    	color: #1c335f;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;	
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #B1C5C3;
+    }
+    
+    .content{
+    	margin: auto 150px;
+    }
+    
+    .content .info h2{
+    	color: #455054;
+    	font-size: 80px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+		margin-top: 50px;
+		font-family: Arial;
+		text-align: center;
+    }
+	
+	.banner{
+		width: 1050px;
+		margin-top: 20px;
+	}
+	
+	.poster{
+		width: 300px;
+		margin-left: 40px;
+	}
+	
+	.btn{
+		width: 200px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #875C36;
+		background-color: #CFA37E;
+		margin-top: 40px ;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.btn:hover{
+		background-color: #704523; 
+	}
+	
+	.btn a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: white;
+		cursor: pointer;
+	}
+	
+	.active{
+		width: 200px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #875C36;
+		margin-top: 40px ;
+		margin-right: 30px;
+		margin-left: 30px;
+		background-color: #B37A4C;
+	}
+	
+	.active a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: white;
+		cursor: pointer;
+	}
+	
+	.content1{
+		margin-left: 150px;
+		margin-right: 170px;
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+	
+	.title{
+		font-size: 50px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.content3{
+		font-size: 18px;
+		text-align: justify;
+		margin-top: 5px;
+		margin-left: 50px;
+		margin-right: 60px;
+	}
+	
+	.box {
+	  background: #E5C1CD;
+	  width: 70rem;
+	  padding: 3rem;
+	  margin: 1rem auto;
+	  border-radius: 0.5rem;
+	}
+	
+	.lounge{
+		width: 250px;
+		margin-left: 20px;
+		border: 5px inset brown;
+	}
+	
+	.lounge1{
+		width: 170px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.lounge2{
+		width: 250px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.lounge3{
+		width: 200px;
+		margin-right: 20px;
+		border: 5px inset brown;
+	}
+	
+	.box2 {
+	  background: #C9BBCB;
+	  width: 70rem;
+	  padding: 3rem;
+	  margin: 1rem auto;
+	  border-radius: 0.5rem;
+	}
+	
+	.activew{
+		width: 220px;
+		margin-left: 20px;
+		border: 5px inset brown;
+	}
+	
+	.activew1{
+		width: 220px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.activew2{
+		width: 210px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.activew3{
+		width: 240px;
+		margin-right: 20px;
+		border: 5px inset brown;
+	}
+	
+	.box3 {
+	  background: #B6B4C2;
+	  width: 70rem;
+	  padding: 3rem;
+	  margin: 1rem auto;
+	  border-radius: 0.5rem;
+	}
+	
+	.pj{
+		width: 220px;
+		margin-left: 20px;
+		border: 5px inset brown;
+	}
+	
+	.pj1{
+		width: 220px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.pj2{
+		width: 220px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.pj3{
+		width: 220px;
+		margin-right: 20px;
+		border: 5px inset brown;
+	}
+	
+	.box4 {
+	  background: #F3DBCF;
+	  width: 70rem;
+	  padding: 3rem;
+	  margin: 1rem auto;
+	  border-radius: 0.5rem;
+	}
+	
+	.tiedye{
+		width: 220px;
+		margin-left: 20px;
+		border: 5px inset brown;
+	}
+	
+	.tiedye1{
+		width: 220px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.tiedye2{
+		width: 220px;
+		margin: auto 20px;
+		border: 5px inset brown;
+	}
+	
+	.tiedye3{
+		width: 220px;
+		margin-right: 20px;
+		border: 5px inset brown;
+	}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+	<section>
+		<header>
+			<h1 class="logo">Fashion</h1>
+			<div class="nav">
+				<a href="../../index.html">Home</a>
+				<a href="../BUSINESS/BUSINESS.html">Business</a>
+				<a href="../FOOD/FOOD.html">Food</a>
+				<a href="../HEALTH/HEALTH.html">Health</a>
+				<a href="../SELFCARE/SELFCARE.html">Self Care</a>
+				<a href="../ONLINECLASS/ONLINECLASS.html">Online Class</a>
+			</div>
+		</header>
+		<div class="categ">
+				<button class="btn"><a href="FASHION.html">FASHION</a></button>
+				<button class="btn"><a href="CHECKLIST.html">MUST HAVES</a></button>
+				<button class="btn"><a href="ESSENTIALS.html">ESSENTIALS</a></button>
+				<button class="btn"><a href="IDEAS.html">FASHION IDEAS</a></button>
+				<button class="active"><a href="QSTYLE.html">QSTYLE</a></button>
+		</div>
+		<div class="content">
+			<div class="info">
+				<h2>A year of pandemic dressing: How quarantine changed our style</h2>
+			</div>
+		</div>
+		
+		<div class="content1">
+			<p>The COVID-19 pandemic has changed a lot about our lives, from how we shop to how we work to how we work out. 
+			It's also changed how we dress. Because many of us spent so much of the last year quarantined at home, gone were 
+			the days of business casual wear for the office and dressy outfits for nights out. 
+			
+			<br><br>
+			
+			Instead, we turned to comfier, around-the-house alternatives, from cozy loungewear to laid-back sneakers. 
+			And no roundup of pandemic fashion would be complete without face masks, which have become the ultimate, 
+			essential accessory of the past year.</p>
+		</div>
+		
+		<hr>
+		
+		<div class="box4">
+			<div class="header4">
+				<h3 class="title">Tie-Dyed Fabrics</h3>
+			</div>
+			<div class="images">
+				<img src="IMAGES/tiedye.png" class="tiedye">
+				<img src="IMAGES/tiedye1.png" class="tiedye1">
+				<img src="IMAGES/tiedye2.png" class="tiedye2">
+				<img src="IMAGES/tiedye3.png" class="tiedye3">
+			</div>
+			<div class="content3">
+				<p>Tie-dye really took off at the beginning of the pandemic, when we were all looking for ways to stay entertained at home. 
+				Not only did tie-dye kits sell out at almost every retailer, but we saw a surge of tie-dye everything, from loungewear to
+				sneakers to T-shirts. If you want to try it for yourself, our experts wrote a handy step-by-step guide on how to tie-dye your clothes.</p>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="header">
+				<h3 class="title">Loungewear</h3>
+			</div>
+			<div class="images">
+				<img src="IMAGES/lounge.jpg" class="lounge">
+				<img src="IMAGES/lounge1.jpg" class="lounge1">
+				<img src="IMAGES/lounge2.jpg" class="lounge2">
+				<img src="IMAGES/lounge3.jfif" class="lounge3">
+			</div>
+			<div class="content3">
+				<p>Loungewear, the even more relaxed cousin of athleisure, was one of the hottest commodities of 2020, 
+				and it continues to be trendy in 2021. Whether it's a Lou and Grey matching set or a comfy pair of joggers,
+				loungewear became the new stay-at-home uniform. I've tested some of the top offerings of the past year and 
+				fell in love with picks from Instagram-famous Richer Poorer and bedding brand Brooklinen. </p>
+			</div>
+		</div>
+		
+		<div class="box2">
+			<div class="header2">
+				<h3 class="title">Activewear</h3>
+			</div>
+			<div class="images">
+				<img src="IMAGES/active.png" class="activew">
+				<img src="IMAGES/active1.jpeg" class="activew1">
+				<img src="IMAGES/active2.png" class="activew2">
+				<img src="IMAGES/active3.png" class="activew3">
+			</div>
+			<div class="content3">
+				<p>When gyms closed last year due to the pandemic, home workouts and virtual fitness classes exploded 
+				in popularity. With them, came an increase in activewear sales. While there are plenty of amazing brands
+				out there for exercise enthusiasts, some of our favorites include Athleta, Alo Yoga, and Lululemon 
+				(the Align leggings are many of our staff members' top pick!).</p>
+			</div>
+		</div>
+		
+		<div class="box3">
+			<div class="header3">
+				<h3 class="title">Pajamas</h3>
+			</div>
+			<div class="images">
+				<img src="IMAGES/pj.png" class="pj">
+				<img src="IMAGES/pj1.png" class="pj1">
+				<img src="IMAGES/pj2.png" class="pj2">
+				<img src="IMAGES/pj3.png" class="pj3">
+			</div>
+			<div class="content3">
+				<p>Pajamas are no longer just for sleeping. Thanks to quarantine, they've become appropriate for lounging around the house,
+				working from home and, in the case of celebrities like Jennifer Aniston and Jodie Foster, attending awards ceremonies. 
+				Some of the most popular matching sets include those from Summersalt, Eberjey, and Nordstrom.</p>
+			</div>
+		</div>
+		
+		<br>
+		<p style="background-color:#CFA37E; text-align: center;">© 2021 PANDEMIC 101. ALL RIGHTS RESERVED.</p>
+	</section>
+</body>
+</html>
