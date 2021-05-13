@@ -1,0 +1,487 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FOOD: Healthy At Home</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+		background-color: #DDDDDA;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+		font-size: 50px;
+		color: #1c335f;
+    }
+    
+    header .nav a{
+    	color: #1c335f;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;	
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #B1C5C3;
+    }
+    
+    .content{
+    	margin-left: 150px;
+		margin-right: 200px;
+    }
+    
+    .content .info h2{
+    	color: #41707A;
+    	font-size: 80px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+		margin-top: 50px;
+		font-family: Arial;
+		text-align: center;
+    }
+	
+	.banner{
+		width: 1050px;
+		margin-top: 20px;
+	}
+	
+	.poster{
+		width: 300px;
+		margin-left: 40px;
+	}
+	
+	.btn{
+		width: 200px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #875C36;
+		background-color: #CFA37E;
+		margin-top: 40px ;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.btn:hover{
+		background-color: #704523; 
+	}
+
+	.btn a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: white;
+		cursor: pointer;
+	}
+	
+	.active{
+		width: 200px;
+		height: 50px;
+		border-radius: 20px;
+		border: 2px solid #875C36;
+		margin-top: 40px ;
+		margin-right: 30px;
+		margin-left: 30px;
+		background-color: #B37A4C;
+	}
+	
+	.active a{
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 13px;
+		color: white;
+		cursor: pointer;
+	}
+	
+	.check{
+		color: #41707A;
+		font-size: 50px;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		line-height: 50px;
+		margin: 30px 150px;
+		text-align: center;
+	}
+	
+
+	.checkinfo{
+		color: #000;
+		font-size: 18px;
+		margin-left: 150px;
+		margin-right: 200px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-align: justify;
+	}
+	
+	.HE1{
+		width: 300px;
+		margin-left: 10px;
+		border: 5px solid black;
+	}
+	
+	.HE2{
+		width: 300px;
+		margin: auto 10px;
+		border: 5px solid black;
+	}
+
+	.HE3{
+		width: 300px;
+		margin-right: 10px;
+		border: 5px solid black;
+	}
+	
+	.A1{
+		width: 250px;
+		margin-left: 230px;
+		border: 5px solid black;
+	}
+	
+	.A2{
+		width: 340px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.A3{
+		width: 265px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.B1{
+		width: 278px;
+		margin-left: 230px;
+		border: 5px solid black;
+	}
+	
+	.B2{
+		width: 300px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.B3{
+		width: 265px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.C1{
+		width: 270px;
+		margin-left: 230px;
+		border: 5px solid black;
+	}
+	
+	.C2{
+		width: 310px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.C3{
+		width: 318px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.D1{
+		width: 247px;
+		margin-left: 300px;
+		border: 5px solid black;
+	}
+	
+	.D2{
+		width: 244px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.D3{
+		width: 258px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.E1{
+		width: 300px;
+		margin-left: 220px;
+		border: 5px solid black;
+	}
+	
+	.E2{
+		width: 285px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.E3{
+		width: 300px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.F1{
+		width: 273px;
+		margin-left: 230px;
+		border: 5px solid black;
+	}
+	
+	.F2{
+		width: 260px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.F3{
+		width: 300px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.G1{
+		width: 278px;
+		margin-left: 230px;
+		border: 5px solid black;
+	}
+	
+	.G2{
+		width: 320px;
+		margin: auto 5px;
+		border: 5px solid black;
+	}
+	
+	.G3{
+		width: 298px;
+		margin-right: 150px;
+		border: 5px solid black;
+	}
+	
+	.content1{
+		margin: 20px 150px;
+		text-align: justify;
+		font-size: 18px;
+		font-family: Poppins;
+	}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+	<section>
+		<header>
+			<h1 class="logo">Food</h1>
+			<div class="nav">
+				<a href="../../index.html">Home</a>
+				<a href="../BUSINESS/BUSINESS.html">Business</a>
+				<a href="../FASHION/FASHION.html">Fashion</a>
+				<a href="../HEALTH/HEALTH.html">Health</a>
+				<a href="../SELFCARE/SELFCARE.html">Self Care</a>
+				<a href="../ONLINECLASS/ONLINECLASS.html">Online Class</a>
+			</div>
+		</header>
+		
+		<div class="categ">
+				<button class="btn"><a href="FOOD.html">FOOD</a></button>
+				<button class="btn"><a href="HEALTHYMEALS.html">HEALTHY MEALS</a></button>
+				<button class="active"><a href="HOME.html">HEALTHY AT HOME</a></button>
+				<button class="btn"><a href="DIET.html">MEAL PLANNING</a></button>
+				<button class="btn"><a href="TRENDS.html">TRENDS</a></button>
+		</div>
+		
+		<div class="content">
+			<div class="info">
+				<h2>#HealthyAtHome: Healthy Diet</h2>
+				<img src="IMAGES/HE1.png" class="HE1">
+				<img src="IMAGES/HE2.png" class="HE2">
+				<img src="IMAGES/HE3.png" class="HE3">
+			</div>
+		</div>
+		<div class="content1">
+			<p>	Eating a healthy diet is very important during the COVID-19 pandemic. 
+			What we eat and drink can affect our body’s ability to prevent, fight and
+			recover from infections.</p>
+			
+			<br>
+			
+			<p>While no foods or dietary supplements can prevent or cure COVID-19 infection,
+			healthy diets are important for supporting immune systems. Good nutrition can also reduce the
+			likelihood of developing other health problems, including obesity, heart disease, diabetes and 
+			some types of cancer.</p>
+			
+			<br>
+			
+			<p>For babies, a healthy diet means exclusive breastfeeding in the first six months, with the 
+			introduction of nutritious and safe foods to complement breastmilk from age 6 months to 2 years 
+			and beyond. For young children, a healthy and balanced diet is essential for growth and development. 
+			For older people, it can help to ensure healthier and more active lives.</p>
+		</div>
+		
+		<br>
+		<h1 class="check">Tips for maintaining a healthy diet:</h1>
+		<hr size="10px" color="#CFA37E">
+		<br>
+		<div class="checklist">
+			<h1 class="check">Eat a variety of food, including fruits and vegetables</h1>
+			<img src="IMAGES/A1.png" class="A1">
+			<img src="IMAGES/A2.png" class="A2">
+			<img src="IMAGES/A3.png" class="A3">
+			<ul type="disc">
+				<li class="checkinfo"> Every day, eat a mix of wholegrains like wheat, maize and rice, legumes like lentils and beans, plenty of fresh fruit 
+				and vegetables , with some foods from animal sources (e.g. meat, fish, eggs and milk).</li>
+				<li class="checkinfo">Choose wholegrain foods like unprocessed maize, millet, oats, wheat and brown rice when you can; they are rich in valuable 
+				fibre and can help you feel full for longer.</li>
+				<li class="checkinfo">For snacks, choose raw vegetables, fresh fruit, and unsalted nuts.</li>
+			</ul>
+		
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+			<h1 class="check">Cut back on salt</h1>
+			<img src="IMAGES/B1.png" class="B1">
+			<img src="IMAGES/B2.png" class="B2">
+			<img src="IMAGES/B3.png" class="B3">
+			<ul type="disc">
+				<li class="checkinfo"> Limit salt intake to 5 grams (equivalent to a teaspoon) a day.</li>
+				<li class="checkinfo">When cooking and preparing foods, use salt sparingly and reduce use of salty sauces and condiments
+				(like soy sauce, stock or fish sauce).</li>
+				<li class="checkinfo">If using canned or dried food, choose varieties of vegetables, nuts and fruit, 
+				without added salt and sugars.</li>
+				<li class="checkinfo"> Remove the salt shaker from the table, and experiment with fresh or dried herbs and spices for added flavor instead.</li>
+				<li class="checkinfo"> Check the labels on food and choose products with lower sodium content. </li>
+			</ul>
+				
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="check">Eat moderate amounts of fats and oils</h1>
+			<img src="IMAGES/C1.png" class="C1">
+			<img src="IMAGES/C2.png" class="C2">
+			<img src="IMAGES/C3.png" class="C3">
+			<ul type="disc">
+				<li class="checkinfo"> Replace butter, ghee and lard with healthier fats like olive, soy, sunflower or corn oil when cooking. </li>
+				<li class="checkinfo"> Choose white meats like poultry and fish which are generally lower in fats than red meat; trim meat of visible fat and limit the 
+				consumption of processed meats.</li>
+				<li class="checkinfo"> Select low-fat or reduced-fat versions of milk and dairy products. </li>
+				<li class="checkinfo"> Avoid processed, baked and fried foods that contain industrially produced trans-fat. </li>
+				<li class="checkinfo"> Try steaming or boiling instead of frying food when cooking. </li>
+			</ul>
+
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="check">Limit sugar intake</h1>
+			<img src="IMAGES/D1.png" class="D1">
+			<img src="IMAGES/D2.png" class="D2">
+			<img src="IMAGES/D3.png" class="D3">
+			<ul type="disc">
+				<li class="checkinfo"> Limit intake of sweets and sugary drinks such as fizzy drinks, fruit juices and juice drinks, liquid and powder concentrates, 
+				flavoured water, energy and sports drinks, ready-to-drink tea and coffee and flavoured milk drinks. </li>
+				<li class="checkinfo"> Choose fresh fruits instead of sweet snacks such as cookies, cakes and chocolate. When other dessert options are chosen,
+				ensure that they are low in sugar and consume small portions. </li>
+				<li class="checkinfo">Avoid giving sugary foods to children. Salt and sugars should not be added to complementary foods given to children under
+				2 years of age, and should be limited beyond that age.</li>
+			</ul>
+
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="check">Stay hydrated: Drink enough water</h1>
+			<img src="IMAGES/E1.png" class="E1">
+			<img src="IMAGES/E2.png" class="E2">
+			<img src="IMAGES/E3.png" class="E3">
+			<ul type="disc">
+				<p class="checkinfo"> Good hydration is crucial for optimal health. Whenever available and safe for consumption, tap water is the healthiest 
+				and cheapest drink. Drinking water instead of sugar-sweetened beverages is a simple way to limit your intake of sugar and excess calories.</p>
+			</ul>
+
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="check">Avoid hazardous and harmful alcohol use</h1>
+			<img src="IMAGES/F1.png" class="F1">
+			<img src="IMAGES/F2.png" class="F2">
+			<img src="IMAGES/F3.png" class="F3">
+				<p class="checkinfo">Alcohol is not a part of a healthy diet. Drinking alcohol does not protect against COVID-19 and can be dangerous. 
+				Frequent or excessive alcohol consumption increases your immediate risk of injury, as well as causing longer-term effects like liver damage,
+				cancer, heart disease and mental illness. There is no safe level of alcohol consumption.</p>
+			</ul>
+
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="check">Breastfeed babies and young children</h1>
+			<img src="IMAGES/G1.png" class="G1">
+			<img src="IMAGES/G2.png" class="G2">
+			<img src="IMAGES/G3.png" class="G3">
+			<p class="checkinfo"> Breastmilk is the ideal food for infants. It is safe, clean and contains antibodies which help protect against many common childhood illnesses. 
+				Babies should be breastfed exclusively during the first 6 months of life, as breast milk provides all the nutrients and fluids they need. </p>
+				<ul type="disc">
+				<li class="checkinfo"> From 6 months of age, breast milk should be complemented with a variety of adequate, safe and nutrient-dense foods.
+				Breastfeeding should continue under babies at 2 years of age or beyond.</li>
+				</ul>
+			<p class="checkinfo">Women with COVID-19 can breastfeed if they wish to do so and should take infection prevention and control measures.</p>
+
+		<br>
+		<hr size="20px" color="#CFA37E">
+		<br>
+			
+		<h1 class="checkinfo">There is no evidence that COVID-19 can be spread through contact with food or food packaging. COVID-19 is generally thought to be spread from person 
+		to person. However, it’s always important to practice good hygiene when handling food to prevent any food-borne illnesses. </h1>
+			<p class="checkinfo"> Follow WHO’s Five keys to safer food:</p>
+				<ol>
+					<li class="checkinfo">Keep clean</li>
+					<li class="checkinfo">Separate raw and cooked</li>
+					<li class="checkinfo">Cook thoroughly</li>
+					<li class="checkinfo">Keep food at safe temperatures</li>
+					<li class="checkinfo">Use safe water and raw materials.</li>
+				</ol>
+
+		<br>
+		<p style="background-color:#CFA37E; text-align: center;">© 2021 PANDEMIC 101. ALL RIGHTS RESERVED.</p>
+		</div>
+	</section>
+</body>
+</html>
